@@ -1,0 +1,16 @@
+train_gen = ImageDataGenerator(rescale=1./255).flow_from_directory(
+    directory=train_dir,
+    class_mode='categorical',
+    batch_size=BATCH,
+    target_size=(ROWS, COLS),
+    color_mode='rgb',
+    shuffle=True
+)
+test_gen = ImageDataGenerator(rescale=1./255).flow_from_directory(
+    directory=test_dir,
+    class_mode='categorical',
+    batch_size=BATCH,
+    target_size=(ROWS, COLS),
+    color_mode='rgb',
+    shuffle=False
+)
