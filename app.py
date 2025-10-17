@@ -18,7 +18,7 @@ import cv2
 # ======================
 
 # Ruta del checkpoint (puedes cambiarla desde el panel de "Files" del Space)
-MODEL_PATH = os.environ.get("MODEL_PATH", "basic_cnn_minFN.pt")  # o "basic_cnn_best.pt"
+MODEL_PATH = os.environ.get("MODEL_PATH", "basic_cnn_minFN30.pt")  # o "basic_cnn_best.pt"
 IMG_SIZE = 224
 DEVICE = "cuda" if torch.cuda.is_available() else "cpu"
 
